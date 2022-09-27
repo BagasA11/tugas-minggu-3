@@ -1,0 +1,61 @@
+<html>
+<head></head>
+<title>multimedia</title>
+<h1 align="center"><big>File Multimedia</big></h1>
+
+
+<body>
+  <body background="yellow.jpg"></body>
+    <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video123">
+            <source src="123.mp4">
+        </video>
+      </div>
+      <script> 
+        var myVideo = document.getElementById("video123"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 560; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+        </script> 
+      <br><br>
+      <p align="center">---------------Audio-------------</p><br><br>
+      <audio id="Audio">
+        <source src="WhatsApp Audio 2022-09-25 at 21.26.23.mpeg" type="audio/mpeg">
+      </audio>
+      <button onclick="mainkanaudio()">Putar</button><br><br>
+      <button onclick="jedaaudio()">Jeda</button>
+      <script>
+        var myAudio = document.getElementById("Audio");
+        function mainkanaudio(){
+          myAudio.play();
+        }
+        function jedaaudio(){myAudio.pause();}
+        
+
+      </script>
+
+      
+     <p ><bold>ke Laman Sebelumnya: </bold> <a href="../biodata2.html" align="center"><---</a></p>
+  </body>
+</html>
