@@ -1,0 +1,55 @@
+<! DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VIdeo Perkenalan</title>
+
+    <h1 align="center">Video Perkenalan</h1>
+    
+</head>
+<body><body style="background-color: rgb(156, 169, 174);"></body>
+  
+
+  <div style="text-align:center"> 
+    <button onclick="playPause()">Play/Pause</button> 
+    <button onclick="makeBig()">Big</button>
+    <button onclick="makeSmall()">Small</button>
+    <button onclick="makeNormal()">Normal</button>
+    <br><br>
+    <video id="video1">
+        <source src="111.mp4">
+    </video>
+  </div>
+
+        <script>
+            var myVideo = document.getElementById("video1"); 
+            
+            function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function makeBig() { 
+            myVideo.width = 560; 
+        } 
+        
+        function makeSmall() { 
+            myVideo.width = 320; 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+       
+            </script>
+                
+<h3>Home Page: </h3><br>
+<a href="semantik2.html">Home</a>
+
+    </body>
+
+</html>
